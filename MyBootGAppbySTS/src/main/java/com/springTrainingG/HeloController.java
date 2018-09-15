@@ -7,7 +7,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HeloController {
 
-	@RequestMapping("/test")
+	@RequestMapping("/")
 	public ModelAndView index(ModelAndView mav) {
 		mav.setViewName("index");
 		return mav;
@@ -15,11 +15,11 @@ public class HeloController {
 
 	@RequestMapping("/other")
 	public String other() {
-		return "redirect:/test";
+		return "redirect:/";
 	}
 
 	@RequestMapping("/home")
 	public String home() {
-		return "forward:/test";
+		return "forward:/";
 	}
 }
