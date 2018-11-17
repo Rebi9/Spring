@@ -7,18 +7,12 @@
 	h1 { font-size:18pt; font-weight:bold; color:grey; }
 	body { font-size:13pt; color:grey; margin:5px 25px; }
 	</style>
-	<script th:inline="javascript">
-	function action() {
-		var val = document.getElementById("text1").value;
-		var res = parseInt(val * ((100 + /*[[${tax}]]*/)) / 100);
-		document.getElementById("msg").innerHTML = "include tax: " + res;
-	}
-	</script>
+	<style th:include="part :: frag_style"></style>
 </head>
 <body>
 	<h1 th:text="#{content.title}">Helo page</h1>
-	<p id="msg"></p>
-	<input type="text" id="text1"/>
-	<button onclick="action()">click</button>
+	<div th:include="part :: frag_body">
+		<p>this is orginal content.</p>
+	</div>
 </body>
 </html>
