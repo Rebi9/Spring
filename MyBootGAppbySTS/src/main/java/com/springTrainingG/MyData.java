@@ -14,7 +14,7 @@ public class MyData {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column
-	private int id;
+	private long id;
 
 	@Column(length = 50, nullable = false)
 	private String name;
@@ -32,7 +32,7 @@ public class MyData {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 

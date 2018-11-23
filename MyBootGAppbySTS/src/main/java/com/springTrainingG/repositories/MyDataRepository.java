@@ -10,6 +10,6 @@ import com.springTrainingG.MyData;
 @Repository
 public interface MyDataRepository extends JpaRepository<MyData, Long> {
 
-	public Optional<MyData> findById(int id);
+	public Optional<MyData> findById(long id);
 
 }
