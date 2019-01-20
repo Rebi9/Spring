@@ -93,21 +93,21 @@ public class HeloController {
 		d1.setName("takuro");
 		d1.setAge(30);
 		d1.setMail("9@takuro");
-		d1.setMemo("Sundome");
+		d1.setMemo("999999999");
 		repository.saveAndFlush(d1);
 		// 2つ目のダミーデータ
 		MyData d2 = new MyData();
 		d2.setName("fredy");
 		d2.setAge(45);
 		d2.setMail("fredy@queen");
-		d2.setMemo("We are the champion.");
+		d2.setMemo("888888888");
 		repository.saveAndFlush(d2);
 		// 3つ目のダミーデータ
 		MyData d3 = new MyData();
 		d3.setName("taisuke");
 		d3.setAge(35);
 		d3.setMail("taisuke@cat");
-		d3.setMemo("kageki");
+		d3.setMemo("777777777");
 		repository.saveAndFlush(d3);
 	}
 }
